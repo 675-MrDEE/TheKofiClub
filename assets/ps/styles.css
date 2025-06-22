@@ -1,0 +1,23 @@
+[data-tab-content]{
+    display: none;
+}
+
+.active[data-tab-content]{
+    display: block;
+}
+
+.tab{
+    padding: 10px;
+    cursor: pointer;
+}
+
+.tab:hover{
+    color: rgb(3, 93, 121);
+    text-shadow: white;
+}
+
+.tab.active{
+    border: thin solid aqua;
+    border-radius: 5px;
+    padding: 8px;
+}
