@@ -1,89 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>The Kofi Club</title>
-  <style>
-    body { font-family: Arial, sans-serif; background: #f4f4f4; color: #333; margin: 0; padding: 0; }
-    header, footer { background: #0f1106; color: white; text-align: center; padding: 1rem 0; }
-    nav a { margin: 0 15px; text-decoration: none; color: white; }
-    .container { padding: 2rem; }
-    h2 { color: #4B5320; }
-    section { margin-bottom: 3rem; }
-  </style>
-  <link rel="stylesheet" href="assets/bs/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/ps/styles.css">
-  <link rel="icon" href="assets/ps/favicon.ico">
-  
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Kofi Club</title>
+    <link rel="stylesheet" href="assets/bs/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/ps/styles.css" />
+    <link rel="icon" href="assets/ps/tkc_favicon.ico" />
+  </head>
 
-<header><div class="row">
-  <div class="col-md-2 ms-5 mb-3"><img class="shadow" src="assets/pics/tkc-logo.jpg" alt="logo"></div>
-  <div class="col-md-8">
- <h1 class="text-danger">the kofi club</h1>
-  <p class="text-warning">Banz, Jiwaka, Papua New Guinea</p>
-  </div>
- 
-</div>
+  <body>
+    <header class="fixed-top bg-dark">
+      <div class="container m-3">
+        <div class="ms-5 mb-3">
+          <img
+            class="shadow border rounded"
+            src="assets/pics/tkc_logo-1.png"
+            alt="logo"
+            style="width: 100px"
+          />
+        </div>
+      </div>  
 
-  <nav class="tabs">
-    <a class="tab active" data-tab-target="#about">About</a>
-    <a class="tab" data-tab-target="#services">Services</a>
-    <a class="tab" data-tab-target="#booking">Booking</a>
-    <a class="tab" data-tab-target="#events">Events</a>
-    <a class="tab" data-tab-target="#gallery">Gallery</a>
-    <a class="tab" data-tab-target="#contact">Contact</a>
-  </nav>
-</header>
+      <nav class="tabs my-3 text-center">
+        <a class="tab active" data-tab-target="#about">About</a>
+        <a class="tab" data-tab-target="#services">Services</a>
+        <a class="tab" data-tab-target="#booking">Booking</a>
+        <a class="tab" data-tab-target="#events">Events</a>
+        <a class="tab" data-tab-target="#gallery">Gallery</a>
+        <a class="tab" data-tab-target="#contact">Contact</a>
+      </nav>
+    </header>
 
-<div class="container tab-content">
-  <section id="about" data-tab-content class="active">
-    <h2>About Us</h2>
-    <p>The Kofi Club is a vibrant social hub in the heart of Banz, Jiwaka. We offer a relaxing atmosphere with a coffee bar, gaming area, and venues for events and gatherings. Whether you're looking to unwind, celebrate, or connect — The Kofi Club is the place to be.</p>
-  </section>
+    <div class="container tab-content" style="margin-top: 200px;">
+      <section id="about" data-tab-content class="active">
+        <h2>About Us</h2>
+        <p>
+          The Kofi Club is a vibrant social hub in the heart of Banz, Jiwaka. We
+          offer a relaxing atmosphere with a coffee bar, gaming area, and venues
+          for events and gatherings. Whether you're looking to unwind,
+          celebrate, or connect — The Kofi Club is the place to be.
+        </p>
+      </section>
 
-  <section id="services" data-tab-content>
-    <h2>Our Services</h2>
-    <ul>
-      <li>Pokies & Gaming Room</li>
-      <li>Coffee & Beverage Bar</li>
-      <li>Event Venue Hire (Weddings, Birthdays, Meetings)</li>
-      <li>Live Music and Entertainment</li>
-    </ul>
-  </section>
+      <section id="services" data-tab-content>
+        <h2>Our Services</h2>
+        <ul>
+          <li>Pokies & Gaming Room</li>
+          <li>Coffee & Beverage Bar</li>
+          <li>Restaurant, Guest Rooms & Swimming Pool</li>
+          <li>Event Venue Hire (Weddings, Birthdays, Meetings & Conference)</li>
+        </ul>
+      </section>
 
-  <section id="booking" data-tab-content>
-    <h2>Booking & Reservations</h2>
-    <p>To book our venue or gaming area, call us at <strong>+675 73 807 139</strong> or fill out our booking form (coming soon).</p>
-  </section>
+      <section id="booking" data-tab-content>
+        <h2>Booking & Reservations</h2>
+        <p>
+          To book our venue or gaming area, call us at
+          <strong>+675 73 807 139</strong> or fill out our booking form (coming
+          soon).
+        </p>
+      </section>
 
-  <section id="events" data-tab-content>
-    <h2>Upcoming Events</h2>
-    <ul>
-      <li><strong>Saturday Chill Night</strong> – Every Saturday, 7PM</li>
-      <li><strong>Monthly Live Band</strong> – Last Friday of each month</li>
-    </ul>
-  </section>
+      <section id="events" data-tab-content>
+        <h2>Upcoming Events</h2>
+        <ul>
+          <li><strong>Saturday Chill Night</strong> – Every Saturday, 7PM</li>
+          <li>
+            <strong>Monthly Live Band</strong> – Last Friday of each month
+          </li>
+        </ul>
+      </section>
 
-  <section id="gallery" data-tab-content>
-    <h2>Gallery</h2>
-    <p>Photos coming soon! Follow us on Facebook and Instagram for updates.</p>
-  </section>
+      <section id="gallery" data-tab-content>
+        <h2>Gallery</h2>
+        <p>
+          Photos coming soon! Follow us on Facebook and Instagram for updates.
+        </p>
+      </section>
 
-  <section id="contact" data-tab-content>
-    <h2>Contact Us</h2>
-    <p>Email: thekoficlub58@gmail.com</p>
-    <p>Phone: +675 73 807 139</p>
-    <p>Location: Banz Town, North Waghi District, Jiwaka Province, PNG</p>
-  </section>
-</div>
+      <section id="contact" data-tab-content>
+        <h2>Contact Us</h2>
+        <p>Email: thekoficlub58@gmail.com</p>
+        <p>Phone: +675 73 807 139</p>
+        <p>
+          Location: Banz Town, North Waghi District, Jiwaka Province, Papua New
+          Guinea.
+        </p>
+      </section>
+    </div>
 
-<footer class="fixed-bottom">
-  <p>&copy; 2025 The Kofi Club. All rights reserved.</p>
-</footer>
-</body>
-<script src="assets/ps/script.js"></script>
+    <footer class="fixed-bottom bg-dark">
+      <p class="mx-3 text-center mt-1 text-secondary">&copy; 2025 The Kofi Club. All rights reserved.</p>
+    </footer>
+  </body>
+  <script src="assets/ps/script.js"></script>
 </html>
-
