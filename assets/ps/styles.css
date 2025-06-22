@@ -33,7 +33,7 @@ section {
 }
 
 .tab:hover {
-  color: rgb(172, 27, 22);
+  color: rgb(209, 50, 10);
   text-shadow: 1px 1px 15px lightblue;
 }
 
@@ -41,7 +41,7 @@ section {
   border: thin solid aqua;
   border-radius: 5px;
   padding: 8px;
-  color: rgb(235, 205, 34);
+  color: rgb(235, 148, 34);
   text-shadow: 1px 1px 15px lightblue;
 }
 
@@ -49,7 +49,7 @@ section {
   .tab.active {
     border: none;
     padding: 8px;
-    color: rgb(235, 205, 34);
+   color: rgb(235, 148, 34);
     text-shadow: 1px 1px 15px lightblue;
   }
 }

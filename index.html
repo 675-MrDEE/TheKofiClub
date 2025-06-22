@@ -10,7 +10,7 @@
   </head>
 
   <body>
-    <header class="fixed-top bg-dark">
+    <header class="fixed-top bg-dark navbar navbar-dark navbar-expand-md">
       <div class="container m-3">
         <div class="ms-5 mb-3">
           <img
@@ -20,19 +20,28 @@
             style="width: 100px"
           />
         </div>
-      </div>  
-
-      <nav class="tabs my-3 text-center">
-        <a class="tab active" data-tab-target="#about">About</a>
-        <a class="tab" data-tab-target="#services">Services</a>
-        <a class="tab" data-tab-target="#booking">Booking</a>
-        <a class="tab" data-tab-target="#events">Events</a>
-        <a class="tab" data-tab-target="#gallery">Gallery</a>
-        <a class="tab" data-tab-target="#contact">Contact</a>
-      </nav>
+        <button
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          class="navbar-toggler"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <nav class="tabs my-3 text-center navbar-nav ms-auto">
+          <a class="nav-item tab active" data-tab-target="#about">About</a>
+          <a class="nav-item tab" data-tab-target="#services">Services</a>
+          <a class="nav-item tab" data-tab-target="#booking">Booking</a>
+          <a class="nav-item tab" data-tab-target="#events">Events</a>
+          <a class="nav-item tab" data-tab-target="#gallery">Gallery</a>
+          <a class="nav-item tab" data-tab-target="#contact">Contact</a>
+        </nav>
+      </div>
     </header>
 
-    <div class="container tab-content" style="margin-top: 200px;">
+    <div class="container tab-content" style="margin-top: 200px">
       <section id="about" data-tab-content class="active">
         <h2>About Us</h2>
         <p>
@@ -91,7 +100,9 @@
     </div>
 
     <footer class="fixed-bottom bg-dark">
-      <p class="mx-3 text-center mt-1 text-secondary">&copy; 2025 The Kofi Club. All rights reserved.</p>
+      <p class="mx-3 text-center mt-1 text-secondary">
+        &copy; 2025 The Kofi Club. All rights reserved.
+      </p>
     </footer>
   </body>
   <script src="assets/ps/script.js"></script>
