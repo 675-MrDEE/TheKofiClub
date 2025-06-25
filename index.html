@@ -43,9 +43,9 @@
               <li class="nav-item">
                 <a class="nav-link tab" id="tab-booking" href="#booking" role="tab" aria-controls="booking" aria-selected="false" data-tab-target="#booking">Booking</a>
               </li>
-              <li class="nav-item">
+            <!--   <li class="nav-item">
                 <a class="nav-link tab" id="tab-events" href="#events" role="tab" aria-controls="events" aria-selected="false" data-tab-target="#events">Events</a>
-              </li>
+              </li> -->
               <li class="nav-item">
                 <a class="nav-link tab" id="tab-gallery" href="#gallery" role="tab" aria-controls="gallery" aria-selected="false" data-tab-target="#gallery">Gallery</a>
               </li>
@@ -99,132 +99,190 @@
       </section>
 
       <section id="gallery" data-tab-content role="tabpanel" aria-labelledby="tab-gallery">
-        <h2>Gallery</h2>
-
-        <div id="gallery-filters" class="d-flex flex-wrap justify-content-center gap-2 mb-4">
-          <button type="button" class="btn btn-outline-light active" data-filter="all">All</button>
-          <button type="button" class="btn btn-outline-light" data-filter="bar">Bar</button>
-          <button type="button" class="btn btn-outline-light" data-filter="club">Club</button>
-          <button type="button" class="btn btn-outline-light" data-filter="conference">Conference</button>
-          <button type="button" class="btn btn-outline-light" data-filter="dining">Dining</button>
-          <button type="button" class="btn btn-outline-light" data-filter="gaming">Gaming</button>
-          <button type="button" class="btn btn-outline-light" data-filter="pool">Pool</button>
-          <button type="button" class="btn btn-outline-light" data-filter="reception">Reception</button>
-          <button type="button" class="btn btn-outline-light" data-filter="rooms">Rooms</button>
-          <button type="button" class="btn btn-outline-light" data-filter="outdoors">Outdoors</button>
-        </div>
-
-        <div id="gallery-grid" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-          <div class="col gallery-item" data-category="bar">
-            <img src="assets/pics/TKC/bar-001.jpg" class="img-fluid rounded" alt="Bar">
+        <h2>📸 Gallery</h2>
+        <div class="gallery-container">
+          <div class="gallery-category">
+            <h3><svg class="gallery-icon" width="1.5em" height="1.5em"><use xlink:href="assets/ps/index.html#icon-pool"/></svg> Swimming Pool & Outdoor Areas</h3>
+            <div class="gallery-grid">
+              <div class="gallery-item">
+                <img src="assets/pics/TKC/pool+balloons-002.jpg" alt="Pool with balloons decoration" loading="lazy">
+                <div class="gallery-caption">Pool with festive decorations</div>
+              </div>
+              <div class="gallery-item">
+                <img src="assets/pics/TKC/pool+kids-001.jpg" alt="Kids enjoying the pool" loading="lazy">
+                <div class="gallery-caption">Family fun at the pool</div>
+              </div>
+              <div class="gallery-item">
+                <img src="assets/pics/TKC/pool-area-001.jpg" alt="Pool area overview" loading="lazy">
+                <div class="gallery-caption">Pool area</div>
+              </div>
+              <div class="gallery-item">
+                <img src="assets/pics/TKC/pool-001.jpg" alt="Swimming pool" loading="lazy">
+                <div class="gallery-caption">Main swimming pool</div>
+              </div>
+              <div class="gallery-item">
+                <img src="assets/pics/TKC/pool-002.jpg" alt="Pool view" loading="lazy">
+                <div class="gallery-caption">Pool view</div>
+              </div>
+              <div class="gallery-item">
+                <img src="assets/pics/TKC/pool+kids-002.jpg" alt="Children at pool" loading="lazy">
+                <div class="gallery-caption">Children enjoying the pool</div>
+              </div>
+              <div class="gallery-item">
+                <img src="assets/pics/TKC/pool+balloons-001.jpg" alt="Pool with balloons" loading="lazy">
+                <div class="gallery-caption">Pool with balloon decorations</div>
+              </div>
+              <div class="gallery-item">
+                <img src="assets/pics/TKC/shelter+pool-001.jpg" alt="Shelter near pool" loading="lazy">
+                <div class="gallery-caption">Shelter area near pool</div>
+              </div>
+            </div>
           </div>
-          <div class="col gallery-item" data-category="bar">
-            <img src="assets/pics/TKC/bar-002.jpg" class="img-fluid rounded" alt="Bar">
+          <div class="gallery-category">
+            <h3><svg class="gallery-icon" width="1.5em" height="1.5em"><use xlink:href="assets/ps/index.html#icon-gaming"/></svg> Gaming & Entertainment</h3>
+            <div class="gallery-grid">
+              <div class="gallery-item">
+                <img src="assets/pics/TKC/pokies-area-002.jpg" alt="Pokies gaming area" loading="lazy">
+                <div class="gallery-caption">Pokies gaming area</div>
+              </div>
+              <div class="gallery-item">
+                <img src="assets/pics/TKC/pokies-area-001.jpg" alt="Pokies machines" loading="lazy">
+                <div class="gallery-caption">Pokies machines</div>
+              </div>
+              <div class="gallery-item">
+                <img src="assets/pics/TKC/pokies+guys-001.jpg" alt="Guys at pokies" loading="lazy">
+                <div class="gallery-caption">Gaming area</div>
+              </div>
+              <div class="gallery-item">
+                <img src="assets/pics/TKC/pokies+guy-001.jpg" alt="Guy at pokies" loading="lazy">
+                <div class="gallery-caption">Gaming entertainment</div>
+              </div>
+              <div class="gallery-item">
+                <img src="assets/pics/TKC/pokies+guys-002.jpg" alt="Group at pokies" loading="lazy">
+                <div class="gallery-caption">Group gaming</div>
+              </div>
+              <div class="gallery-item">
+                <img src="assets/pics/TKC/pokies+guys-003.jpg" alt="Friends at pokies" loading="lazy">
+                <div class="gallery-caption">Friends enjoying games</div>
+              </div>
+            </div>
           </div>
-          <div class="col gallery-item" data-category="club">
-            <img src="assets/pics/TKC/club-area-001.jpg" class="img-fluid rounded" alt="Club Area">
+          <div class="gallery-category">
+            <h3><svg class="gallery-icon" width="1.5em" height="1.5em"><use xlink:href="assets/ps/index.html#icon-rooms"/></svg> Accommodation & Rooms</h3>
+            <div class="gallery-grid">
+              <div class="gallery-item">
+                <img src="assets/pics/TKC/rooms-001.jpg" alt="Guest room" loading="lazy">
+                <div class="gallery-caption">Comfortable guest room</div>
+              </div>
+              <div class="gallery-item">
+                <img src="assets/pics/TKC/rooms-002.jpg" alt="Room interior" loading="lazy">
+                <div class="gallery-caption">Room interior</div>
+              </div>
+              <div class="gallery-item">
+                <img src="assets/pics/TKC/rooms-003.jpg" alt="Guest accommodation" loading="lazy">
+                <div class="gallery-caption">Guest accommodation</div>
+              </div>
+              <div class="gallery-item">
+                <img src="assets/pics/TKC/rooms-004.jpg" alt="Room view" loading="lazy">
+                <div class="gallery-caption">Room view</div>
+              </div>
+              <div class="gallery-item">
+                <img src="assets/pics/TKC/rooms-005.jpg" alt="Accommodation" loading="lazy">
+                <div class="gallery-caption">Accommodation</div>
+              </div>
+            </div>
           </div>
-          <div class="col gallery-item" data-category="club">
-            <img src="assets/pics/TKC/club-area-002.jpg" class="img-fluid rounded" alt="Club Area">
+          <div class="gallery-category">
+            <h3><svg class="gallery-icon" width="1.5em" height="1.5em"><use xlink:href="assets/ps/index.html#icon-dining"/></svg> Dining & Restaurant</h3>
+            <div class="gallery-grid">
+              <div class="gallery-item">
+                <img src="assets/pics/TKC/dining-room-001.jpg" alt="Dining room" loading="lazy">
+                <div class="gallery-caption">Dining room</div>
+              </div>
+              <div class="gallery-item">
+                <img src="assets/pics/TKC/dining-room-002.jpg" alt="Restaurant area" loading="lazy">
+                <div class="gallery-caption">Restaurant area</div>
+              </div>
+              <div class="gallery-item">
+                <img src="assets/pics/TKC/restaurant-001.jpg" alt="Restaurant" loading="lazy">
+                <div class="gallery-caption">Restaurant</div>
+              </div>
+              <div class="gallery-item">
+                <img src="assets/pics/TKC/freezer+drinks-001.jpg" alt="Drinks and freezer" loading="lazy">
+                <div class="gallery-caption">Beverage selection</div>
+              </div>
+            </div>
           </div>
-          <div class="col gallery-item" data-category="conference">
-            <img src="assets/pics/TKC/conference-area-001.jpg" class="img-fluid rounded" alt="Conference Area">
+          <div class="gallery-category">
+            <h3><svg class="gallery-icon" width="1.5em" height="1.5em"><use xlink:href="assets/ps/index.html#icon-bar"/></svg> Bar & Club Areas</h3>
+            <div class="gallery-grid">
+              <div class="gallery-item">
+                <img src="assets/pics/TKC/bar-001.jpg" alt="Bar area" loading="lazy">
+                <div class="gallery-caption">Bar area</div>
+              </div>
+              <div class="gallery-item">
+                <img src="assets/pics/TKC/bar-002.jpg" alt="Bar counter" loading="lazy">
+                <div class="gallery-caption">Bar counter</div>
+              </div>
+              <div class="gallery-item">
+                <img src="assets/pics/TKC/club-area-001.jpg" alt="Club area" loading="lazy">
+                <div class="gallery-caption">Club area</div>
+              </div>
+              <div class="gallery-item">
+                <img src="assets/pics/TKC/club-area-002.jpg" alt="Club space" loading="lazy">
+                <div class="gallery-caption">Club space</div>
+              </div>
+            </div>
           </div>
-          <div class="col gallery-item" data-category="conference">
-            <img src="assets/pics/TKC/conference-room-001.jpg" class="img-fluid rounded" alt="Conference Room">
+          <div class="gallery-category">
+            <h3><svg class="gallery-icon" width="1.5em" height="1.5em"><use xlink:href="assets/ps/index.html#icon-reception"/></svg> Reception & Conference</h3>
+            <div class="gallery-grid">
+              <div class="gallery-item">
+                <img src="assets/pics/TKC/reception-area-001.jpg" alt="Reception area" loading="lazy">
+                <div class="gallery-caption">Reception area</div>
+              </div>
+              <div class="gallery-item">
+                <img src="assets/pics/TKC/reception-area-002.jpg" alt="Reception desk" loading="lazy">
+                <div class="gallery-caption">Reception desk</div>
+              </div>
+              <div class="gallery-item">
+                <img src="assets/pics/TKC/conference-area-001.jpg" alt="Conference area" loading="lazy">
+                <div class="gallery-caption">Conference area</div>
+              </div>
+              <div class="gallery-item">
+                <img src="assets/pics/TKC/conference-room-001.jpg" alt="Conference room" loading="lazy">
+                <div class="gallery-caption">Conference room</div>
+              </div>
+            </div>
           </div>
-          <div class="col gallery-item" data-category="dining">
-            <img src="assets/pics/TKC/dining-room-001.jpg" class="img-fluid rounded" alt="Dining Room">
-          </div>
-          <div class="col gallery-item" data-category="dining">
-            <img src="assets/pics/TKC/dining-room-002.jpg" class="img-fluid rounded" alt="Dining Room">
-          </div>
-          <div class="col gallery-item" data-category="dining">
-            <img src="assets/pics/TKC/freezer+drinks-001.jpg" class="img-fluid rounded" alt="Drinks Freezer">
-          </div>
-           <div class="col gallery-item" data-category="dining">
-            <img src="assets/pics/TKC/restaurant-001.jpg" class="img-fluid rounded" alt="Restaurant">
-          </div>
-          <div class="col gallery-item" data-category="gaming">
-            <img src="assets/pics/TKC/pokies-area-001.jpg" class="img-fluid rounded" alt="Gaming Area">
-          </div>
-          <div class="col gallery-item" data-category="gaming">
-            <img src="assets/pics/TKC/pokies-area-002.jpg" class="img-fluid rounded" alt="Gaming Area">
-          </div>
-          <div class="col gallery-item" data-category="gaming">
-            <img src="assets/pics/TKC/pokies+guy-001.jpg" class="img-fluid rounded" alt="Gaming">
-          </div>
-          <div class="col gallery-item" data-category="gaming">
-            <img src="assets/pics/TKC/pokies+guys-001.jpg" class="img-fluid rounded" alt="Gaming">
-          </div>
-          <div class="col gallery-item" data-category="gaming">
-            <img src="assets/pics/TKC/pokies+guys-002.jpg" class="img-fluid rounded" alt="Gaming">
-          </div>
-          <div class="col gallery-item" data-category="gaming">
-            <img src="assets/pics/TKC/pokies+guys-003.jpg" class="img-fluid rounded" alt="Gaming">
-          </div>
-          <div class="col gallery-item" data-category="pool">
-            <img src="assets/pics/TKC/pool-001.jpg" class="img-fluid rounded" alt="Pool">
-          </div>
-          <div class="col gallery-item" data-category="pool">
-            <img src="assets/pics/TKC/pool-002.jpg" class="img-fluid rounded" alt="Pool">
-          </div>
-          <div class="col gallery-item" data-category="pool">
-            <img src="assets/pics/TKC/pool-area-001.jpg" class="img-fluid rounded" alt="Pool Area">
-          </div>
-          <div class="col gallery-item" data-category="pool">
-            <img src="assets/pics/TKC/pool+balloons-001.jpg" class="img-fluid rounded" alt="Pool with Balloons">
-          </div>
-          <div class="col gallery-item" data-category="pool">
-            <img src="assets/pics/TKC/pool+balloons-002.jpg" class="img-fluid rounded" alt="Pool with Balloons">
-          </div>
-          <div class="col gallery-item" data-category="pool">
-            <img src="assets/pics/TKC/pool+kids-001.jpg" class="img-fluid rounded" alt="Kids at the Pool">
-          </div>
-          <div class="col gallery-item" data-category="pool">
-            <img src="assets/pics/TKC/pool+kids-002.jpg" class="img-fluid rounded" alt="Kids at the Pool">
-          </div>
-          <div class="col gallery-item" data-category="reception">
-            <img src="assets/pics/TKC/reception-area-001.jpg" class="img-fluid rounded" alt="Reception">
-          </div>
-          <div class="col gallery-item" data-category="reception">
-            <img src="assets/pics/TKC/reception-area-002.jpg" class="img-fluid rounded" alt="Reception">
-          </div>
-          <div class="col gallery-item" data-category="rooms">
-            <img src="assets/pics/TKC/rooms-001.jpg" class="img-fluid rounded" alt="Room">
-          </div>
-          <div class="col gallery-item" data-category="rooms">
-            <img src="assets/pics/TKC/rooms-002.jpg" class="img-fluid rounded" alt="Room">
-          </div>
-          <div class="col gallery-item" data-category="rooms">
-            <img src="assets/pics/TKC/rooms-003.jpg" class="img-fluid rounded" alt="Room">
-          </div>
-          <div class="col gallery-item" data-category="rooms">
-            <img src="assets/pics/TKC/rooms-004.jpg" class="img-fluid rounded" alt="Room">
-          </div>
-          <div class="col gallery-item" data-category="rooms">
-            <img src="assets/pics/TKC/rooms-005.jpg" class="img-fluid rounded" alt="Room">
-          </div>
-          <div class="col gallery-item" data-category="outdoors">
-            <img src="assets/pics/TKC/shelter-001.jpg" class="img-fluid rounded" alt="Outdoor Shelter">
-          </div>
-          <div class="col gallery-item" data-category="outdoors">
-            <img src="assets/pics/TKC/shelter-002.jpg" class="img-fluid rounded" alt="Outdoor Shelter">
-          </div>
-          <div class="col gallery-item" data-category="outdoors">
-            <img src="assets/pics/TKC/shelter-003.jpg" class="img-fluid rounded" alt="Outdoor Shelter">
-          </div>
-          <div class="col gallery-item" data-category="outdoors">
-            <img src="assets/pics/TKC/shelter-004.jpg" class="img-fluid rounded" alt="Outdoor Shelter">
-          </div>
-          <div class="col gallery-item" data-category="outdoors">
-            <img src="assets/pics/TKC/shelter-005.jpg" class="img-fluid rounded" alt="Outdoor Shelter">
-          </div>
-          <div class="col gallery-item" data-category="outdoors">
-            <img src="assets/pics/TKC/shelter-006.jpg" class="img-fluid rounded" alt="Outdoor Shelter">
-          </div>
-          <div class="col gallery-item" data-category="outdoors">
-            <img src="assets/pics/TKC/shelter+pool-001.jpg" class="img-fluid rounded" alt="Shelter by the Pool">
+          <div class="gallery-category">
+            <h3><svg class="gallery-icon" width="1.5em" height="1.5em"><use xlink:href="assets/ps/index.html#icon-outdoors"/></svg> Outdoor Shelters</h3>
+            <div class="gallery-grid">
+              <div class="gallery-item">
+                <img src="assets/pics/TKC/shelter-001.jpg" alt="Outdoor shelter" loading="lazy">
+                <div class="gallery-caption">Outdoor shelter</div>
+              </div>
+              <div class="gallery-item">
+                <img src="assets/pics/TKC/shelter-002.jpg" alt="Shelter area" loading="lazy">
+                <div class="gallery-caption">Shelter area</div>
+              </div>
+              <div class="gallery-item">
+                <img src="assets/pics/TKC/shelter-003.jpg" alt="Shelter view" loading="lazy">
+                <div class="gallery-caption">Shelter view</div>
+              </div>
+              <div class="gallery-item">
+                <img src="assets/pics/TKC/shelter-004.jpg" alt="Outdoor area" loading="lazy">
+                <div class="gallery-caption">Outdoor area</div>
+              </div>
+              <div class="gallery-item">
+                <img src="assets/pics/TKC/shelter-005.jpg" alt="Shelter space" loading="lazy">
+                <div class="gallery-caption">Shelter space</div>
+              </div>
+              <div class="gallery-item">
+                <img src="assets/pics/TKC/shelter-006.jpg" alt="Outdoor shelter" loading="lazy">
+                <div class="gallery-caption">Outdoor shelter</div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -232,7 +290,7 @@
       <section id="contact" data-tab-content role="tabpanel" aria-labelledby="tab-contact">
         <h2>Contact Us</h2>
         <p><strong>Email:</strong> <a href="mailto:thekoficlub58@gmail.com">thekoficlub58@gmail.com</a></p>
-        <p><strong>Phone:</strong><a href="tel:+67573807139"> +675 73 807 139</a></p>
+        <p><strong>Phone:</strong> <a href="#" id="contact-phone-link"> +675 73 807 139</a></p>
         <p>
           <strong>Location:</strong>
           <a href="#" data-bs-toggle="modal" data-bs-target="#mapModal">
@@ -260,14 +318,56 @@
       </div>
     </div>
 
+    <!-- Call/WhatsApp Modal -->
+    <div class="modal fade" id="callWhatsappModal" tabindex="-1" aria-labelledby="callWhatsappModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="callWhatsappModalLabel">Contact Us</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+            <p>How would you like to contact us?</p>
+            <div class="d-flex justify-content-center gap-3">
+              <a href="tel:+67573807139" class="btn btn-primary" id="call-btn">Call</a>
+              <a href="https://wa.me/67573807139" class="btn btn-success" id="whatsapp-btn" target="_blank" rel="noopener">WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <footer class="bg-dark mt-auto py-2">
-      <div class="container">
-        <p class="text-center text-secondary mb-0 small">
+      <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <p class="text-center text-secondary mb-0 small mb-2 mb-md-0">
           &copy; 2025 The Kofi Club. All rights reserved.
         </p>
+        <div class="footer-social d-flex gap-3 justify-content-center">
+          <a href="#" class="footer-social-link" aria-label="Facebook">
+            <img src="assets/ps/facebook-icon.svg" alt="Facebook" class="footer-social-img" width="32" height="32" loading="lazy" />
+          </a>
+          <a href="#" class="footer-social-link" aria-label="Instagram">
+            <img src="assets/ps/instagram-icon.svg" alt="Instagram" class="footer-social-img" width="32" height="32" loading="lazy" />
+          </a>
+          <a href="#" class="footer-social-link" aria-label="WhatsApp">
+            <img src="assets/ps/whatsapp-icon.svg" alt="WhatsApp" class="footer-social-img" width="32" height="32" loading="lazy" />
+          </a>
+        </div>
       </div>
     </footer>
     <script src="assets/bs/js/bootstrap.bundle.min.js"></script>
     <script src="assets/ps/script.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var phoneLink = document.getElementById('contact-phone-link');
+        var callWhatsappModal = new bootstrap.Modal(document.getElementById('callWhatsappModal'));
+        if (phoneLink) {
+          phoneLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            callWhatsappModal.show();
+          });
+        }
+      });
+    </script>
   </body>
 </html>
