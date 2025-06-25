@@ -49,7 +49,292 @@ section {
   .tab.active {
     border: none;
     padding: 8px;
-   color: rgb(235, 148, 34);
+    color: rgb(235, 148, 34);
     text-shadow: 1px 1px 15px lightblue;
   }
+}
+
+.container.tab-content {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.05)),
+    url("/assets/pics/TKC/20240511_130422.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 2rem 2rem 4rem 2rem;
+  min-height: 70vh;
+  position: relative;
+  margin-top: 80px;
+}
+
+.container.tab-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.container.tab-content > * {
+  position: relative;
+  z-index: 2;
+}
+
+.container.tab-content section {
+  padding: 0 1rem;
+  max-width: 100%;
+}
+
+.container.tab-content h2 {
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 0;
+  padding: 0 0.5rem;
+}
+
+.container.tab-content p,
+.container.tab-content li {
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  line-height: 1.7;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  padding: 0 0.5rem;
+}
+
+.container.tab-content ul {
+  padding-left: 2rem;
+  padding-right: 0.5rem;
+}
+
+.container.tab-content li {
+  margin-bottom: 0.75rem;
+}
+
+.container.tab-content strong {
+  color: #ffd700;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  font-weight: bold;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  width: 100%;
+  position: relative;
+  bottom: 0;
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 768px) {
+  .container.tab-content {
+    padding: 1rem 1.5rem 5rem 1.5rem;
+    min-height: 60vh;
+    margin-top: 120px;
+  }
+  
+  .container.tab-content section {
+    padding: 0 0.75rem;
+  }
+  
+  .container.tab-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    padding: 0 0.25rem;
+  }
+  
+  .container.tab-content p,
+  .container.tab-content li {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
+    padding: 0 0.25rem;
+  }
+  
+  .container.tab-content ul {
+    padding-left: 1.5rem;
+    padding-right: 0.25rem;
+  }
+  
+  .container.tab-content li {
+    margin-bottom: 0.5rem;
+  }
+  
+  header .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* Small screens (phones) */
+@media (max-width: 480px) {
+  .container.tab-content {
+    padding: 0.5rem 1rem 6rem 1rem;
+    min-height: 50vh;
+    margin-top: 140px;
+  }
+  
+  .container.tab-content section {
+    padding: 0 0.5rem;
+  }
+  
+  .container.tab-content h2 {
+    font-size: 1.3rem;
+    margin-bottom: 0.75rem;
+    padding: 0 0.25rem;
+  }
+  
+  .container.tab-content p,
+  .container.tab-content li {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+    padding: 0 0.25rem;
+  }
+  
+  .container.tab-content ul {
+    padding-left: 1.25rem;
+    padding-right: 0.25rem;
+  }
+  
+  .container.tab-content li {
+    margin-bottom: 0.4rem;
+  }
+}
+
+/* Extra small screens (very small phones) */
+@media (max-width: 360px) {
+  .container.tab-content {
+    padding: 0.25rem 0.75rem 5rem 0.75rem;
+    min-height: 45vh;
+    margin-top: 150px;
+  }
+  
+  .container.tab-content section {
+    padding: 0 0.25rem;
+  }
+  
+  .container.tab-content h2 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    padding: 0 0.125rem;
+  }
+  
+  .container.tab-content p,
+  .container.tab-content li {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-bottom: 0.4rem;
+    padding: 0 0.125rem;
+  }
+  
+  .container.tab-content ul {
+    padding-left: 1rem;
+    padding-right: 0.125rem;
+  }
+  
+  .container.tab-content li {
+    margin-bottom: 0.3rem;
+  }
+  
+  /* Adjust navbar for very small screens */
+  .navbar-brand img {
+    max-width: 80px !important;
+  }
+  
+  .navbar-nav .nav-link {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Landscape orientation on mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+  .container.tab-content {
+    margin-top: 100px;
+    padding: 0.5rem 1rem 4rem 1rem;
+  }
+  
+  .container.tab-content section {
+    padding: 0 0.5rem;
+  }
+  
+  .container.tab-content h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    padding: 0 0.25rem;
+  }
+  
+  .container.tab-content p,
+  .container.tab-content li {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-bottom: 0.4rem;
+    padding: 0 0.25rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container.tab-content {
+    padding: 3rem 2rem 5rem 2rem;
+    min-height: 80vh;
+    margin-top: 90px;
+  }
+  
+  .container.tab-content h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+  
+  .container.tab-content p,
+  .container.tab-content li {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 1.25rem;
+  }
+  
+  .container.tab-content ul {
+    padding-left: 2.5rem;
+  }
+  
+  .container.tab-content li {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container.tab-content {
+    padding: 4rem 3rem 6rem 3rem;
+    margin-top: 100px;
+  }
+  
+  .container.tab-content h2 {
+    font-size: 3.5rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  .container.tab-content p,
+  .container.tab-content li {
+    font-size: 1.3rem;
+    line-height: 1.9;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.container.tab-content h2,
+.container.tab-content p,
+.container.tab-content li {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.tab:focus-visible {
+  outline: 2px solid #4b5320;
+  outline-offset: 2px;
 }

@@ -10,39 +10,56 @@
   </head>
 
   <body>
-    <header class="fixed-top bg-dark navbar navbar-dark navbar-expand-md">
-      <div class="container m-3">
-        <div class="ms-5 mb-3">
-          <img
-            class="shadow border rounded"
-            src="assets/pics/tkc_logo-1.png"
-            alt="logo"
-            style="width: 100px"
-          />
+    <header>
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+        <div class="container">
+          <a href="#about" class="navbar-brand d-flex align-items-center">
+            <img
+              class="shadow border rounded img-fluid"
+              src="assets/pics/tkc_logo-1.png"
+              alt="The Kofi Club logo"
+              style="max-width: 100px; height: auto;"
+            />
+          </a>
+          <button
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            class="navbar-toggler mt-1"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto tabs" role="tablist" aria-label="Main navigation">
+              <li class="nav-item">
+                <a class="nav-link tab active" id="tab-about" href="#about" role="tab" aria-controls="about" aria-selected="true" data-tab-target="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link tab" id="tab-services" href="#services" role="tab" aria-controls="services" aria-selected="false" data-tab-target="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link tab" id="tab-booking" href="#booking" role="tab" aria-controls="booking" aria-selected="false" data-tab-target="#booking">Booking</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link tab" id="tab-events" href="#events" role="tab" aria-controls="events" aria-selected="false" data-tab-target="#events">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link tab" id="tab-gallery" href="#gallery" role="tab" aria-controls="gallery" aria-selected="false" data-tab-target="#gallery">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link tab" id="tab-contact" href="#contact" role="tab" aria-controls="contact" aria-selected="false" data-tab-target="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <button
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          class="navbar-toggler"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </div>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <nav class="tabs my-3 text-center navbar-nav ms-auto">
-          <a class="nav-item tab active" data-tab-target="#about">About</a>
-          <a class="nav-item tab" data-tab-target="#services">Services</a>
-          <a class="nav-item tab" data-tab-target="#booking">Booking</a>
-          <a class="nav-item tab" data-tab-target="#events">Events</a>
-          <a class="nav-item tab" data-tab-target="#gallery">Gallery</a>
-          <a class="nav-item tab" data-tab-target="#contact">Contact</a>
-        </nav>
-      </div>
+      </nav>
     </header>
 
-    <div class="container tab-content" style="margin-top: 200px">
-      <section id="about" data-tab-content class="active">
+    <main class="container tab-content py-5" id="main-content">
+      <section id="about" data-tab-content class="active" role="tabpanel" aria-labelledby="tab-about">
         <h2>About Us</h2>
         <p>
           The Kofi Club is a vibrant social hub in the heart of Banz, Jiwaka. We
@@ -52,7 +69,7 @@
         </p>
       </section>
 
-      <section id="services" data-tab-content>
+      <section id="services" data-tab-content role="tabpanel" aria-labelledby="tab-services">
         <h2>Our Services</h2>
         <ul>
           <li>Pokies & Gaming Room</li>
@@ -62,7 +79,7 @@
         </ul>
       </section>
 
-      <section id="booking" data-tab-content>
+      <section id="booking" data-tab-content role="tabpanel" aria-labelledby="tab-booking">
         <h2>Booking & Reservations</h2>
         <p>
           To book our venue or gaming area, call us at
@@ -71,7 +88,7 @@
         </p>
       </section>
 
-      <section id="events" data-tab-content>
+      <section id="events" data-tab-content role="tabpanel" aria-labelledby="tab-events">
         <h2>Upcoming Events</h2>
         <ul>
           <li><strong>Saturday Chill Night</strong> – Every Saturday, 7PM</li>
@@ -81,14 +98,14 @@
         </ul>
       </section>
 
-      <section id="gallery" data-tab-content>
+      <section id="gallery" data-tab-content role="tabpanel" aria-labelledby="tab-gallery">
         <h2>Gallery</h2>
         <p>
           Photos coming soon! Follow us on Facebook and Instagram for updates.
         </p>
       </section>
 
-      <section id="contact" data-tab-content>
+      <section id="contact" data-tab-content role="tabpanel" aria-labelledby="tab-contact">
         <h2>Contact Us</h2>
         <p>Email: thekoficlub58@gmail.com</p>
         <p>Phone: +675 73 807 139</p>
@@ -97,13 +114,16 @@
           Guinea.
         </p>
       </section>
-    </div>
+    </main>
 
-    <footer class="fixed-bottom bg-dark">
-      <p class="mx-3 text-center mt-1 text-secondary">
-        &copy; 2025 The Kofi Club. All rights reserved.
-      </p>
+    <footer class="bg-dark mt-auto py-2">
+      <div class="container">
+        <p class="text-center text-secondary mb-0 small">
+          &copy; 2025 The Kofi Club. All rights reserved.
+        </p>
+      </div>
     </footer>
+    <script src="assets/bs/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/ps/script.js"></script>
   </body>
-  <script src="assets/ps/script.js"></script>
 </html>
