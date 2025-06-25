@@ -62,7 +62,7 @@
       <section id="about" data-tab-content class="active" role="tabpanel" aria-labelledby="tab-about">
         <h2>About Us</h2>
         <p>
-          The Kofi Club is a vibrant social hub in the heart of Banz, Jiwaka. We
+          The <strong>Kofi Club</strong> is a vibrant social hub in the heart of <strong>Banz, Jiwaka</strong>. We
           offer a relaxing atmosphere with a coffee bar, gaming area, and venues
           for events and gatherings. Whether you're looking to unwind,
           celebrate, or connect — The Kofi Club is the place to be.
@@ -100,21 +100,165 @@
 
       <section id="gallery" data-tab-content role="tabpanel" aria-labelledby="tab-gallery">
         <h2>Gallery</h2>
-        <p>
-          Photos coming soon! Follow us on Facebook and Instagram for updates.
-        </p>
+
+        <div id="gallery-filters" class="d-flex flex-wrap justify-content-center gap-2 mb-4">
+          <button type="button" class="btn btn-outline-light active" data-filter="all">All</button>
+          <button type="button" class="btn btn-outline-light" data-filter="bar">Bar</button>
+          <button type="button" class="btn btn-outline-light" data-filter="club">Club</button>
+          <button type="button" class="btn btn-outline-light" data-filter="conference">Conference</button>
+          <button type="button" class="btn btn-outline-light" data-filter="dining">Dining</button>
+          <button type="button" class="btn btn-outline-light" data-filter="gaming">Gaming</button>
+          <button type="button" class="btn btn-outline-light" data-filter="pool">Pool</button>
+          <button type="button" class="btn btn-outline-light" data-filter="reception">Reception</button>
+          <button type="button" class="btn btn-outline-light" data-filter="rooms">Rooms</button>
+          <button type="button" class="btn btn-outline-light" data-filter="outdoors">Outdoors</button>
+        </div>
+
+        <div id="gallery-grid" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+          <div class="col gallery-item" data-category="bar">
+            <img src="assets/pics/TKC/bar-001.jpg" class="img-fluid rounded" alt="Bar">
+          </div>
+          <div class="col gallery-item" data-category="bar">
+            <img src="assets/pics/TKC/bar-002.jpg" class="img-fluid rounded" alt="Bar">
+          </div>
+          <div class="col gallery-item" data-category="club">
+            <img src="assets/pics/TKC/club-area-001.jpg" class="img-fluid rounded" alt="Club Area">
+          </div>
+          <div class="col gallery-item" data-category="club">
+            <img src="assets/pics/TKC/club-area-002.jpg" class="img-fluid rounded" alt="Club Area">
+          </div>
+          <div class="col gallery-item" data-category="conference">
+            <img src="assets/pics/TKC/conference-area-001.jpg" class="img-fluid rounded" alt="Conference Area">
+          </div>
+          <div class="col gallery-item" data-category="conference">
+            <img src="assets/pics/TKC/conference-room-001.jpg" class="img-fluid rounded" alt="Conference Room">
+          </div>
+          <div class="col gallery-item" data-category="dining">
+            <img src="assets/pics/TKC/dining-room-001.jpg" class="img-fluid rounded" alt="Dining Room">
+          </div>
+          <div class="col gallery-item" data-category="dining">
+            <img src="assets/pics/TKC/dining-room-002.jpg" class="img-fluid rounded" alt="Dining Room">
+          </div>
+          <div class="col gallery-item" data-category="dining">
+            <img src="assets/pics/TKC/freezer+drinks-001.jpg" class="img-fluid rounded" alt="Drinks Freezer">
+          </div>
+           <div class="col gallery-item" data-category="dining">
+            <img src="assets/pics/TKC/restaurant-001.jpg" class="img-fluid rounded" alt="Restaurant">
+          </div>
+          <div class="col gallery-item" data-category="gaming">
+            <img src="assets/pics/TKC/pokies-area-001.jpg" class="img-fluid rounded" alt="Gaming Area">
+          </div>
+          <div class="col gallery-item" data-category="gaming">
+            <img src="assets/pics/TKC/pokies-area-002.jpg" class="img-fluid rounded" alt="Gaming Area">
+          </div>
+          <div class="col gallery-item" data-category="gaming">
+            <img src="assets/pics/TKC/pokies+guy-001.jpg" class="img-fluid rounded" alt="Gaming">
+          </div>
+          <div class="col gallery-item" data-category="gaming">
+            <img src="assets/pics/TKC/pokies+guys-001.jpg" class="img-fluid rounded" alt="Gaming">
+          </div>
+          <div class="col gallery-item" data-category="gaming">
+            <img src="assets/pics/TKC/pokies+guys-002.jpg" class="img-fluid rounded" alt="Gaming">
+          </div>
+          <div class="col gallery-item" data-category="gaming">
+            <img src="assets/pics/TKC/pokies+guys-003.jpg" class="img-fluid rounded" alt="Gaming">
+          </div>
+          <div class="col gallery-item" data-category="pool">
+            <img src="assets/pics/TKC/pool-001.jpg" class="img-fluid rounded" alt="Pool">
+          </div>
+          <div class="col gallery-item" data-category="pool">
+            <img src="assets/pics/TKC/pool-002.jpg" class="img-fluid rounded" alt="Pool">
+          </div>
+          <div class="col gallery-item" data-category="pool">
+            <img src="assets/pics/TKC/pool-area-001.jpg" class="img-fluid rounded" alt="Pool Area">
+          </div>
+          <div class="col gallery-item" data-category="pool">
+            <img src="assets/pics/TKC/pool+balloons-001.jpg" class="img-fluid rounded" alt="Pool with Balloons">
+          </div>
+          <div class="col gallery-item" data-category="pool">
+            <img src="assets/pics/TKC/pool+balloons-002.jpg" class="img-fluid rounded" alt="Pool with Balloons">
+          </div>
+          <div class="col gallery-item" data-category="pool">
+            <img src="assets/pics/TKC/pool+kids-001.jpg" class="img-fluid rounded" alt="Kids at the Pool">
+          </div>
+          <div class="col gallery-item" data-category="pool">
+            <img src="assets/pics/TKC/pool+kids-002.jpg" class="img-fluid rounded" alt="Kids at the Pool">
+          </div>
+          <div class="col gallery-item" data-category="reception">
+            <img src="assets/pics/TKC/reception-area-001.jpg" class="img-fluid rounded" alt="Reception">
+          </div>
+          <div class="col gallery-item" data-category="reception">
+            <img src="assets/pics/TKC/reception-area-002.jpg" class="img-fluid rounded" alt="Reception">
+          </div>
+          <div class="col gallery-item" data-category="rooms">
+            <img src="assets/pics/TKC/rooms-001.jpg" class="img-fluid rounded" alt="Room">
+          </div>
+          <div class="col gallery-item" data-category="rooms">
+            <img src="assets/pics/TKC/rooms-002.jpg" class="img-fluid rounded" alt="Room">
+          </div>
+          <div class="col gallery-item" data-category="rooms">
+            <img src="assets/pics/TKC/rooms-003.jpg" class="img-fluid rounded" alt="Room">
+          </div>
+          <div class="col gallery-item" data-category="rooms">
+            <img src="assets/pics/TKC/rooms-004.jpg" class="img-fluid rounded" alt="Room">
+          </div>
+          <div class="col gallery-item" data-category="rooms">
+            <img src="assets/pics/TKC/rooms-005.jpg" class="img-fluid rounded" alt="Room">
+          </div>
+          <div class="col gallery-item" data-category="outdoors">
+            <img src="assets/pics/TKC/shelter-001.jpg" class="img-fluid rounded" alt="Outdoor Shelter">
+          </div>
+          <div class="col gallery-item" data-category="outdoors">
+            <img src="assets/pics/TKC/shelter-002.jpg" class="img-fluid rounded" alt="Outdoor Shelter">
+          </div>
+          <div class="col gallery-item" data-category="outdoors">
+            <img src="assets/pics/TKC/shelter-003.jpg" class="img-fluid rounded" alt="Outdoor Shelter">
+          </div>
+          <div class="col gallery-item" data-category="outdoors">
+            <img src="assets/pics/TKC/shelter-004.jpg" class="img-fluid rounded" alt="Outdoor Shelter">
+          </div>
+          <div class="col gallery-item" data-category="outdoors">
+            <img src="assets/pics/TKC/shelter-005.jpg" class="img-fluid rounded" alt="Outdoor Shelter">
+          </div>
+          <div class="col gallery-item" data-category="outdoors">
+            <img src="assets/pics/TKC/shelter-006.jpg" class="img-fluid rounded" alt="Outdoor Shelter">
+          </div>
+          <div class="col gallery-item" data-category="outdoors">
+            <img src="assets/pics/TKC/shelter+pool-001.jpg" class="img-fluid rounded" alt="Shelter by the Pool">
+          </div>
+        </div>
       </section>
 
       <section id="contact" data-tab-content role="tabpanel" aria-labelledby="tab-contact">
         <h2>Contact Us</h2>
-        <p>Email: thekoficlub58@gmail.com</p>
-        <p>Phone: +675 73 807 139</p>
+        <p><strong>Email:</strong> <a href="mailto:thekoficlub58@gmail.com">thekoficlub58@gmail.com</a></p>
+        <p><strong>Phone:</strong><a href="tel:+67573807139"> +675 73 807 139</a></p>
         <p>
-          Location: Banz Town, North Waghi District, Jiwaka Province, Papua New
-          Guinea.
+          <strong>Location:</strong>
+          <a href="#" data-bs-toggle="modal" data-bs-target="#mapModal">
+            Banz Town, North Waghi District, Jiwaka Province, Papua New
+            Guinea.
+          </a>
         </p>
       </section>
     </main>
+
+    <!-- Map Modal -->
+    <div class="modal fade" id="mapModal" tabindex="-1" aria-labelledby="mapModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="mapModalLabel">The Kofi Club Location</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-0">
+            <div class="ratio ratio-16x9">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15877.552941977632!2d144.61715687981004!3d-5.800716606912837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x685907e58480728d%3A0x55ed8116eac77ef7!2sBanz%20Jiwaka%20Province!5e0!3m2!1sen!2spg!4v1750841022227!5m2!1sen!2spg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <footer class="bg-dark mt-auto py-2">
       <div class="container">

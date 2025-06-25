@@ -72,3 +72,28 @@ tabs.forEach(tab => {
     tab.setAttribute('tabindex', '-1');
   }
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const filters = document.querySelectorAll('#gallery-filters .btn');
+  const galleryItems = document.querySelectorAll('#gallery-grid .gallery-item');
+
+  if (filters.length > 0 && galleryItems.length > 0) {
+    filters.forEach(filter => {
+      filter.addEventListener('click', function() {
+        // Handle active button state
+        filters.forEach(btn => btn.classList.remove('active'));
+        this.classList.add('active');
+
+        const selectedFilter = this.getAttribute('data-filter');
+
+        // Filter items
+        galleryItems.forEach(item => {
+          item.style.display = 'none'; // Hide all items initially
+          if (selectedFilter === 'all' || item.getAttribute('data-category') === selectedFilter) {
+            item.style.display = 'block'; // Show matching items
+          }
+        });
+      });
+    });
+  }
+});

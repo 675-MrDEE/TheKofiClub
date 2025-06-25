@@ -56,7 +56,7 @@ section {
 
 .container.tab-content {
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.05)),
-    url("../pics/TKC/20240511_130422.jpg");
+    url("../pics/TKC/pool+balloons-002.jpg");
   background-size: cover;
   background-position: center;
   padding: 2rem 2rem 4rem 2rem;
@@ -337,4 +337,39 @@ footer {
 .tab:focus-visible {
   outline: 2px solid #4b5320;
   outline-offset: 2px;
+}
+
+/* Gallery Filter Buttons */
+#gallery-filters .btn {
+  transition: all 0.3s ease;
+  border-width: 2px;
+}
+
+#gallery-filters .btn.active {
+  background-color: #ffd700;
+  color: #333;
+  border-color: #ffd700;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+#gallery-filters .btn:hover:not(.active) {
+  background-color: rgba(255, 215, 0, 0.2);
+  border-color: #ffd700;
+}
+
+/* Gallery Item Transitions */
+.gallery-item {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
